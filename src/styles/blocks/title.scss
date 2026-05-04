@@ -1,0 +1,20 @@
+.title {
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+
+    &--front {
+        font-size: 12px;
+        color: #D12D35;
+        text-align: start;
+    }
+
+    &--secondary {
+        font-size: 48px;
+        color: #161616;
+        text-align: start;
+    }
+}

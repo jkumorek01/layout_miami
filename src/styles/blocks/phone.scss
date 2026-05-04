@@ -1,0 +1,33 @@
+@use '../utils/mixins.scss' as *;
+
+.mobile {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    transform: translateX(calc(-100% - 20px));
+
+     &__contact {
+        font-weight: 600;
+        font-style: medium;
+        font-size: 16px;
+    }
+
+    &__number {
+        font-weight: 600;
+        font-style: medium;
+        font-size: 16px;
+    }
+
+    &__topic {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+     &:not(:hover) .mobile__label {
+        @include visually-hidden;
+    }
+
+}
+

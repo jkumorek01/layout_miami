@@ -15,6 +15,7 @@
     height: 840px;
     box-sizing: border-box;
     align-content: start;
+    overflow: hidden;
 
     @include desktop;
 
@@ -97,3 +98,6 @@
     }
 }
 
+.menu:target {
+  overflow: hidden;
+}

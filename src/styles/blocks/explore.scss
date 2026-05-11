@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 176px;
+    padding: 0 72px;
     gap: 48px;
 
     // @media (min-width: 1020px) {
@@ -20,40 +20,53 @@
     // }
 
     &__wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 48px;
-      align-items: flex-start;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // gap: 48px;
+      // align-items: flex-start;
+      // width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
 
-      @media (min-width: 1020px) {
-          grid-column: 1 / -1;
-          flex-direction: row;
-          justify-content: space-between;
-      }
+    @media (min-width: 1020px) {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
     }
 
     &__section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        text-align: center;
-
-        @media (min-width: 1020px) {
-        width: 392px;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      width: 100%;
+      min-width: 0;
+      text-align: center;
+      overflow: hidden;
 
     }
 
     &__photo {
-        height: 320px;
-        width: 392px;
-        object-fit: cover;
+      width: 100%;
+      max-width: 392px;
+      height: auto;
+      aspect-ratio: 392 / 320;
+      object-fit: cover;
+      display: block;
+      transition: all 0.3s;
     }
 
+    &__photo:hover {
+      transform: scale(1.1);
+    }
+
+
     &__red {
-        margin-top: 32px;
+            margin-top: 32px;
             font-weight: 700;
             font-style: bold;
             font-size: 24px;

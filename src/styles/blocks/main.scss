@@ -6,12 +6,15 @@
     flex-direction: column;
     align-items: center;
     padding: 140px 72px;
-    gap: 32px;;
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
 
     @media (min-width: 1020px) {
-      @include desktop;
-
-      align-items: start;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 64px;
     }
 }
 
@@ -108,21 +111,31 @@
 
  &__wrapper {
         display: flex;
-        justify-content: space-between;
         gap: 24px;
-        height: 186px;
+        // height: 186px;
+        overflow: hidden;
+
     }
 
      &__photo--left {
           width: 50%;
           object-fit: cover;
+          transition: transform 0.3s;
 
+      }
+
+      &__photo--left:hover {
+        transform: scale(1.1);
       }
 
       &__photo--right {
           width: 50%;
           object-fit: cover;
+          transition: transform 0.3s;
       }
+      &__photo--right:hover {
+      transition: scale(1.1);
+    }
 
     @media (min-width: 744px) {
       &__photo--left {
@@ -142,12 +155,12 @@
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         gap: 24px;
-        height: 100px;
+        // height: 100px;
+        overflow: hidden;
 
         @media (min-width: 744px) {
-          height: 287px;
+          // height: 287px;
     }
 
     }
@@ -155,13 +168,21 @@
     &__photo--left {
         width: 50%;
         object-fit: cover;
+        transition: transform 0.3s;
     }
+
+    &__photo--left:hover {
+        transform: scale(1.1);
+      }
 
     &__photo--right {
         width: 50%;
         object-fit: cover;
+        transition: transform 0.3s;
     }
-
+    &__photo--right:hover {
+      transition: scale(1.1);
+    }
 
 }
 
@@ -169,21 +190,30 @@
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         gap: 24px;
-        height: 186px;
+        // height: 186px;
+        overflow: hidden;
     }
 
     &__photo--left {
         width: 50%;
         object-fit: cover;
+        transition: transform 0.3s;
 
     }
+    &__photo--left:hover {
+        transform: scale(1.1);
+      }
 
     &__photo--right {
         width: 50%;
         object-fit: cover;
         object-position: 0 25%;
+        transition: transform 0.3s;
+    }
+
+    &__photo--right:hover {
+      transition: scale(1.1);
     }
 
     @media (min-width: 744px) {

@@ -1,18 +1,13 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
-
-@import './blocks/explore.scss';
-@import './blocks/footer.scss';
-@import './blocks/form.scss';
-@import './blocks/header.scss';
-@import './blocks/main.scss';
-@import './blocks/menu.scss';
-@import './blocks/navigation.scss';
-@import './blocks/title.scss';
-@import './blocks/button-order.scss';
-@import './blocks/burger.scss';
-@import './blocks/phone.scss';
-
-@import './utils/reset.scss';
-@import './utils/mixins.scss';
+@import './blocks/explore';
+@import './blocks/footer';
+@import './blocks/form';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/menu';
+@import './blocks/navigation';
+@import './blocks/title';
+@import './blocks/button-order';
+@import './blocks/burger';
+@import './blocks/phone';
+@import './utils/reset';
+@import './utils/mixins';

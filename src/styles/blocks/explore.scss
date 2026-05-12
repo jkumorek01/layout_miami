@@ -1,12 +1,15 @@
 @use '../utils/mixins' as *;
 
 .explore {
-  margin-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 72px;
+  padding: 0 120px;
   gap: 48px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
 
   // @media (min-width: 1020px) {
   //   @include desktop();

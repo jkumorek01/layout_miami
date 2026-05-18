@@ -1,9 +1,13 @@
 .navigation {
-  padding-top: 50px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (min-width: 450px) {
+      padding-top: 50px;
+    }
 
   &__logo {
     text-decoration: none;
@@ -12,10 +16,11 @@
     font-style: bold;
     font-size: 40px;
     font-family: Cinzel, sans-serif !important;
-    padding-left: 150px;
+    padding-left: 50px;
 
-    @media (min-width: 320px) {
-      padding-left: 50px;
+     @media (max-width: 450px) {
+      font-size: 25px;
+      padding-left: 20px;
     }
   }
 
@@ -30,10 +35,10 @@
   &__icons {
     display: flex;
     gap: 55px;
-    padding-right: 150px;
+    padding-right: 50px;
 
-    @media (min-width: 320px) {
-      padding-right: 50px;
+     @media (max-width: 450px) {
+      padding-right: 20px;
     }
   }
 
@@ -41,6 +46,11 @@
     width: 32px;
     height: 32px;
     display: block;
+
+    @media (max-width: 450px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   @media (min-width: 1020px) {

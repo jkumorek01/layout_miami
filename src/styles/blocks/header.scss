@@ -34,5 +34,9 @@
 
   &__title {
     margin-top: 83px;
+
+    @media (max-width: 450px) {
+      font-size: 45px;
+    }
   }
 }
